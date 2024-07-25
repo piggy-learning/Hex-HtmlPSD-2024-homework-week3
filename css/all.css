@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 h1 > a {
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
 }
 
-h1 > a {
+.collaborate, .banner, h1 > a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -17,12 +19,37 @@ h1 > a {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #650300;
+}
+
 a {
   text-decoration: none;
+  color: #FFFFFF;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
 }
 
 header {
-  background-color: red;
+  background-color: #AA0601;
 }
 
 h1 > a {
@@ -30,8 +57,261 @@ h1 > a {
   background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
   width: 80px;
   height: 48px;
+  margin: 16px 0px;
 }
 
-.gap-6 {
-  gap: 4rem;
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 12px 0px;
+  gap: 64px;
+}
+.nav a {
+  display: block;
+}
+
+.banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  padding: 296px 0px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.link-btn {
+  display: block;
+  padding: 6px 12px;
+  background-color: #AA0601;
+}
+
+.feature {
+  background-color: #FBF2F2;
+  padding: 80px 0px;
+}
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-list-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 306px;
+}
+.feature-list-card img {
+  width: 84px;
+}
+
+.classic {
+  padding: 80px 0px;
+}
+
+.classic-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+}
+.classic-list img {
+  width: 416px;
+  display: block;
+}
+
+.collaborate {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+  padding: 80px 0px;
+}
+
+.collaborate-list {
+  display: flex;
+}
+
+.collaborate-list-card img {
+  width: 648px;
+  display: block;
+}
+
+.reviews {
+  padding: 80px 0px;
+}
+
+.reviews-list {
+  display: flex;
+  gap: 24px;
+}
+
+.reviews-list-card {
+  width: 306px;
+}
+.reviews-list-card img {
+  display: block;
+}
+.reviews-list-card .reviews-list-card-content {
+  padding: 16px;
+}
+.reviews-list-card .reviews-list-card-content p {
+  height: 72px;
+}
+
+.date {
+  font-size: 14px;
+  color: #707070;
+}
+
+.contact {
+  background-color: #FBF2F2;
+  padding: 80px 0px;
+}
+
+.contact-container {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+.contact-us input[type=text] {
+  background-color: #FBF2F2;
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #000;
+  font-size: 16px;
+}
+.contact-us .contact-us-feedback {
+  height: 136px;
+  vertical-align: top;
+  background-color: #FBF2F2;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+.contact-us input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 176px;
+}
+
+.footer {
+  background-color: #AA0601;
+}
+
+.social-linklist-item {
+  width: 48px;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justfy-content-between {
+  justify-content: space-between;
+}
+
+.gap-8 {
+  gap: 32px;
+}
+.gap-12 {
+  gap: 48px;
+}
+.gap-16 {
+  gap: 64px;
+}
+
+.font-size-4 {
+  font-size: 16px;
+}
+.font-size-5 {
+  font-size: 20px;
+}
+.font-size-6 {
+  font-size: 24px;
+}
+.font-size-9 {
+  font-size: 36px;
+}
+.font-size-12 {
+  font-size: 48px;
+}
+.font-size-16 {
+  font-size: 64px;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.mb-1 {
+  margin-bottom: 4px;
+}
+.mb-2 {
+  margin-bottom: 8px;
+}
+.mb-4 {
+  margin-bottom: 16px;
+}
+.mb-6 {
+  margin-bottom: 24px;
+}
+.mb-8 {
+  margin-bottom: 32px;
+}
+.mb-12 {
+  margin-bottom: 48px;
+}
+.my-2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.p-0 {
+  padding: 0px;
+}
+.pt-12 {
+  padding-top: 48px;
+}
+.pb-8 {
+  padding-bottom: 32px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.color-primary {
+  color: #AA0601;
+}
+.color-light {
+  color: #FFFFFF;
+}
+
+.bg-primary {
+  background-color: #AA0601;
+}
+.bg-light {
+  background-color: #FFFFFF;
+}
+.bg-third {
+  background-color: #FBF2F2;
+}
+
+.shadow {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
 }/*# sourceMappingURL=all.css.map */
