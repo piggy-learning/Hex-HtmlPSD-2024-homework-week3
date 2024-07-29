@@ -6,7 +6,6 @@
 *,
 *::after,
 *::before {
-  outline: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -35,8 +34,9 @@ img {
 }
 
 .container {
-  max-width: 1296px;
+  max-width: 1368px;
   margin: 0 auto;
+  padding: 0px 36px;
 }
 
 header {
@@ -50,7 +50,6 @@ h1>a {
   background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
   width: 80px;
   height: 48px;
-  margin: 16px 0px;
 }
 
 .nav {
@@ -61,6 +60,9 @@ h1>a {
 
   a {
     display: block;
+  }
+  a:hover{
+    text-decoration: underline;
   }
 }
 
@@ -104,7 +106,8 @@ h1>a {
 }
 
 .classic {
-  padding: 80px 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .classic-list {
@@ -138,7 +141,8 @@ h1>a {
 }
 
 .reviews {
-  padding: 80px 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .reviews-list {
@@ -161,17 +165,20 @@ h1>a {
     padding: 16px;
   }
 }
-.date{
+
+.date {
   font-size: 14px;
   color: $gray;
 }
+
 .contact {
   background-color: $third;
   padding: 80px 0px;
 }
 
 .contact-container {
-  max-width: 636px;
+  max-width: 708px;
+  padding: 0px 36px;
   margin: 0 auto;
 }
 
@@ -192,21 +199,173 @@ h1>a {
     padding: 6px 12px;
     font-size: 16px;
   }
+
   input[type="submit"] {
     display: block;
     margin: 0 auto;
     padding: 16px 176px;
+    border: 0px;
+  }
+  input[type="submit"]:hover {
+    text-decoration: underline;
   }
 }
 
-.footer{
+.footer {
   background-color: $primary;
-} 
+}
 
-.social-linklist-item{
+.social-linklist-item {
   width: 48px;
 }
 
+.policy-link{
+  font-size: 14px;
+}
+
+@media(max-width:992px) {
+  .banner {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+  }
+
+  .feature-list {
+    flex-wrap: wrap;
+    margin: 0px -12px;
+    gap: 0;
+  }
+
+  .feature-list-card {
+    width: 49.9%;
+    padding: 0px 12px;
+  }
+
+  .classic {
+    padding: 80px 0px;
+  }
+
+  .classic-list {
+    flex-direction: column;
+  }
+
+  .collaborate {
+    @extend %background;
+    background-position: top;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+  }
+
+  .collaborate-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews-list {
+    flex-wrap: wrap;
+    gap: 0px;
+    margin: 0px -12px;
+  }
+
+  .reviews-list-card {
+    width: 49.9%;
+    padding: 0px 12px;
+  }
+
+  .contact-container {
+    max-width: 648px;
+  }
+  .contact-us {  
+    input[type="submit"] {
+      padding: 16px 136px;
+    }
+ 
+  }
+}
+
+@media(max-width:576px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .nav {
+    margin: 0px -12px;
+    padding: 0px;
+    gap: 0px;
+    flex-wrap: wrap;
+
+    li {
+      width: 49.9%;
+      border: 1px solid #FFFFFF;
+    }
+
+    a {
+      text-align: center;
+      padding: 12px 60px;
+    }
+    
+  }
+
+  .banner {
+    padding: 144px 0px;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .link-btn {
+    display: block;
+    padding: 6px 12px;
+    background-color: $primary;
+  }
+
+  .feature {
+    padding: 40px 0px;
+  }
+
+  .feature-list-card {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .feature-list-card:last-child {
+    padding-bottom: 0px;
+  }
+
+  .classic {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .reviews{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .reviews-list-card {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .reviews-list-card:last-child {
+    margin-bottom: 0px
+  }
+  .contact{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .contact-container {
+    padding: 0px 12px;
+  }
+  .contact-us {  
+    input[type="submit"] {
+      padding: 16px 0px;
+      width: 100%;
+    }
+  }
+  .social-linklist-item{
+    max-width: 24px;
+  }
+}
 
 .d {
   &-flex {
@@ -215,7 +374,11 @@ h1>a {
 
   &-block {
     display: block;
-    
+
+  }
+
+  &-none{
+    display: none;
   }
 }
 
@@ -224,7 +387,11 @@ h1>a {
     flex-direction: column;
   }
 }
-
+.align-items{
+  &-start{
+    align-items: flex-start;
+  }
+}
 .justfy-content {
   &-between {
     justify-content: space-between;
@@ -232,12 +399,20 @@ h1>a {
 }
 
 .gap {
-  &-8{
+  &-1{
+    gap:4px
+  }
+  &-2{
+    gap:8px
+  }
+  &-8 {
     gap: 32px;
   }
-  &-12{
+
+  &-12 {
     gap: 48px;
   }
+
   &-16 {
     gap: 64px;
   }
@@ -298,14 +473,20 @@ h1>a {
     &-6 {
       margin-bottom: 24px;
     }
-    &-8{
+
+    &-8 {
       margin-bottom: 32px;
     }
+
     &-12 {
       margin-bottom: 48px;
     }
   }
-
+  &l{
+    &-auto{
+      margin-left:auto;
+    }
+  }
   &y {
     &-2 {
       margin-top: 8px;
@@ -314,17 +495,27 @@ h1>a {
   }
 }
 
-.p{
-  &-0{
+.p {
+  &-0 {
     padding: 0px;
   }
-  &t{
-    &-12{
+
+  &t {
+    &-4 {
+      padding-top: 16px;
+    }
+
+    &-12 {
       padding-top: 48px;
     }
   }
-  &b{
-    &-8{
+
+  &b {
+    &-4 {
+      padding-bottom: 16px;
+    }
+
+    &-8 {
       padding-bottom: 32px;
     }
   }
@@ -347,7 +538,7 @@ h1>a {
 }
 
 .bg {
-  &-primary{
+  &-primary {
     background-color: $primary;
   }
 
@@ -360,12 +551,95 @@ h1>a {
   }
 }
 
-.shadow{
+.shadow {
   box-shadow: 0px 2px 6px #00000029;
 }
 
-.vertical-align{
-  &-middle{
-    vertical-align: middle; 
+.vertical-align {
+  &-middle {
+    vertical-align: middle;
+  }
+}
+
+
+@media(max-width:992px){
+  .m{
+    &b-lg{
+      &-6{
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .p{
+    &b-lg{
+      &-10{
+        padding-bottom: 40px;
+      }
+    }
+  }
+} 
+
+@media(max-width:576px) {
+  .d-sm {
+    &-flex{
+      display: flex;
+    }
+    &-block {
+      display: block;
+    }
+    &-none{
+      display: none;
+    }
+  }
+  .flex-direction-sm{
+    &-column{
+      flex-direction: column;
+    }
+  }
+  .m {
+    &b-sm {
+      &-5 {
+        margin-bottom: 20px;
+      }
+      &-6 {
+        margin-bottom: 24px;
+      }
+    }
+    &l-sm {
+      &-auto {
+        margin-left:auto;
+      }
+    }
+  }
+
+  .p{
+    &t-sm{
+      &-6{
+        padding-top: 24px;
+      }
+    }
+    &b-sm{
+      &-6{
+        padding-bottom: 24px;
+      }
+    }
+  }
+  .font-size-sm {
+    &-4 {
+      font-size: 16px;
+    }
+
+    &-5 {
+      font-size: 20px;
+    }
+
+    &-6 {
+      font-size: 24px;
+    }
+  }
+  .gap-sm{
+    &-2{
+      gap: 8px;
+    }
   }
 }

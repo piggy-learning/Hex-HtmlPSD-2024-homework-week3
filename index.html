@@ -15,8 +15,8 @@
 
 <body>
   <header>
-    <div class="container d-flex justfy-content-between">
-      <h1><a href="index.html" class="">glasses</a></h1>
+    <div class="container d-flex justfy-content-between d-sm-block">
+      <h1 class="d-block pt-4 pb-4"><a href="index.html" class="">glasses</a></h1>
       <ul class="nav">
         <li><a href="#" class="">系列鏡框</a></li>
         <li><a href="#" class="">門市據點</a></li>
@@ -29,14 +29,14 @@
   <main>
     <section class="banner">
       <div class="container banner-content">
-        <h2 class="font-size-9">Promise-Desert 2020 早春系列</h2>
-        <h2 class="font-size-16 font-weight-bold mb-1">看得清，才能看得遠</h2>
-        <a href="#" class="link-btn">立即購買</a>
+        <h2 class="font-size-9 font-size-sm-4">Promise-Desert 2020 早春系列</h2>
+        <h2 class="font-size-16 font-size-sm-6 font-weight-bold mb-1">看得清，才能看得遠</h2>
+        <a href="#" class="link-btn font-size-sm-5">立即購買</a>
       </div>
     </section>
     <section class="feature">
       <div class="container">
-        <h2 class="font-size-12 text-align-center font-weight-bold mb-6">用專業的心，做專業的事</h2>
+        <h2 class="font-size-12 font-size-sm-6 text-align-center font-weight-bold mb-6">用專業的心，做專業的事</h2>
         <ul class="feature-list">
           <li class="feature-list-card">
             <img
@@ -69,25 +69,25 @@
         </ul>
       </div>
     </section>
-    <section class="classic">
-      <h2 class="font-size-12 font-weight-bold mb-12 text-align-center">經典系列鏡框</h2>
+    <section class="classic container">
+      <h2 class="font-size-12 font-weight-bold mb-12 mb-sm-6 text-align-center">經典系列鏡框</h2>
       <ul class="classic-list">
         <li>
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true"
-            alt="home-section3-1" class="mb2">
+            alt="home-section3-1" class="mb-2">
           <h3 class="font-size-12 font-weight-bold font-style-italic text-align-center color-primary">OPTICAL</h3>
         </li>
         <li>
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true"
-            alt="home-section3-2" class="mb2">
+            alt="home-section3-2" class="mb-2">
           <h3 class="font-size-12 font-weight-bold font-style-italic text-align-center color-primary">SUNGLASSES</h3>
         </li>
         <li>
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true"
-            alt="home-section3-3" class="mb2">
+            alt="home-section3-3" class="mb-2">
           <h3 class="font-size-12 font-weight-bold font-style-italic text-align-center color-primary">FUNCTIONAL</h3>
         </li>
       </ul>
@@ -95,19 +95,31 @@
     <section class="collaborate">
       <div class="container">
         <h2 class="font-size-12 color-light font-weight-bold text-align-center mb-12">聯名設計鏡框</h2>
-        <ul class="collaborate-list bg-light">
-          <li class="collaborate-list-card">
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
-              alt="home-section4-1">
+        <ul class="collaborate-list">
+          <li class="collaborate-list-card bg-light mb-lg-6">
+            <picture>
+              <source
+                srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true"
+                media="(max-width:576px)">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
+                alt="home-section4-1">
+            </picture>
+
             <h3 class="font-size-12 color-primary font-weight-bold text-align-center font-style-italic my-2">DOUBLE A+
             </h3>
           </li>
-          <li class="collaborate-list-card">
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
-              alt="home-section4-2">
-            <h3 class="font-size-12 color-primary font-weight-bold text-align-center font-style-italic my-2">YOUTH</h3>
+          <li class="collaborate-list-card bg-light">
+            <picture>
+              <source
+                srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true"
+                media="(max-width:576px)">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
+                alt="home-section4-2">
+              <h3 class="font-size-12 color-primary font-weight-bold text-align-center font-style-italic my-2">YOUTH
+              </h3>
+            </picture>
           </li>
         </ul>
       </div>
@@ -159,7 +171,7 @@
     </section>
     <section class="contact">
       <div class="contact-container">
-        <h2 class="font-size-12 font-weight-bold mb-12 text-align-center">聯絡我們</h2>
+        <h2 class="font-size-12 font-size-sm-6 font-weight-bold mb-12 mb-lg-6 text-align-center">聯絡我們</h2>
         <p class="font-size-5 mb-6">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
         <form id="contact-us" class="contact-us">
           <p class="mb-4">
@@ -179,7 +191,7 @@
             <textarea name="contact-us-feedback" placeholder="請輸入您的意見" id="contact-us-feedback"
               class="contact-us-feedback "></textarea>
           </p>
-          <p class="mb-12">
+          <p class="mb-12 mb-sm-6 d-flex align-items-start gap-1">
             <input type="checkbox" id="contact-us-lisence" class="contact-us-lisence" placeholder="example@email.com"
               class="bg-third font-size-4 " />
             <label for="contact-us-lisence">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
@@ -189,9 +201,9 @@
       </div>
     </section>
   </main>
-  <footer class="footer pt-12 pb-8">
+  <footer class="footer pt-12 pb-8 pb-lg-10 pt-sm-6 pb-sm-6">
     <div class="container">
-      <nav class="d-flex justfy-content-between mb-6">
+      <nav class="d-flex justfy-content-between mb-6 d-sm-none">
         <ul class="nav gap-12 p-0">
           <li><a href="#">首頁</a></li>
           <li><a href="#">系列鏡框</a></li>
@@ -211,10 +223,31 @@
                 alt="line" class="d-block social-linklist-item"></a></li>
         </ul>
       </nav>
-      <a href="#" class="d-block font-size-9 mb-2"><span class="material-icons-outlined font-size-12 vertical-align-middle">call</span>0800-000-000</a>
-      <a href="#" class="d-block font-size-9 mb-8"><span class="material-icons-outlined font-size-12 vertical-align-middle">mail</span>glasses@business.com</a>
-      <hr class="mb-8">
-      <span class="color-light">Copyright © 2020 Glasses.All rights reserved.</span>
+      <div class="d-flex">
+        <a href="#" class="d-block font-size-9 font-size-sm-4 mb-2"><span
+            class="material-icons-outlined font-size-12 font-size-sm-6 vertical-align-middle">call</span>0800-000-000</a>
+        <ul class="d-sm-flex d-none gap-2 ml-sm-auto p-0">
+          <li><a href="#"><img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
+                alt="fb" class="d-block social-linklist-item"></a></li>
+          <li><a href="#"><img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
+                alt="ig" class="d-block social-linklist-item"></a></li>
+          <li><a href="#"><img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
+                alt="line" class="d-block social-linklist-item"></a></li>
+        </ul>
+      </div>
+      <a href="#" class="d-block font-size-9 font-size-sm-4 mb-8 mb-sm-5"><span
+          class="material-icons-outlined font-size-12 font-size-sm-6 vertical-align-middle">mail</span>glasses@business.com</a>
+      <hr class="mb-8 mb-sm-5">
+      <div class="d-flex justfy-content-between flex-direction-sm-column gap-sm-2">
+        <span class="color-light">Copyright © 2020 Glasses.All rights reserved.</span>
+        <ul class="d-flex gap-12 flex-direction-sm-column gap-sm-2">
+          <li><a href="#" class="policy-link">隱私權政策</a></li>
+          <li><a href="#" class="policy-link">服務條款</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>
